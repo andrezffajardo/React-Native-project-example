@@ -10,6 +10,7 @@ const App = () => {
     let openImagePickerAsync = async () => {
         let permissionResult = await ImagePicker.requestMediaLibraryPermissionsAsync()
 
+
         if (permissionResult.granted === false) {
             alert('Permission to access camera is required');
             return;
